@@ -1,0 +1,77 @@
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  color: #000;
+}
+.main-header {
+  padding-top: 50px;
+  background: #eeeeee;
+}
+.range-filter {
+  width: 240px;
+  /* margin: 50px auto; для демонстрации */
+}
+.range-controls {
+	position: relative;
+	height: 41px;
+	padding-top: 39px;
+	border-radius: 5px;
+  background: #f1f1f1;
+  margin-bottom: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+.range-controls .toggle {
+  width: 4px;
+  height: 4px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  background: #ababab;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  cursor: pointer;
+  
+}
+.range-controls .min_toggle {
+  left: 40px;
+}
+.range-controls .max_toggle {
+  left: 130px;
+}
+.price-controls {
+  font-size: 0;
+}
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+}
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+  width: 60px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  background: #f1f1f1;
+  margin-left: 10px;
+}
+.max-price {
+  text-align: right;
+}
+
+
