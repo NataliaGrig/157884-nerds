@@ -1,0 +1,250 @@
+html,body{
+	min-width:1000px; 
+	margin:0; 
+	padding:0;
+}
+body {
+  font-size: 16px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #000000;
+}
+.clearfix::after{
+	content:""; 
+	display:table; 
+	clear:both;
+}
+.container{
+	margin-left:100px;
+	width:960px;
+}
+.main-header {
+  background: #eeeeee;
+  padding-bottom:80px;
+}
+.menu .logo {
+	float:left;
+	margin-top:15px;
+}
+.logo>img {
+	height:60px;
+	width:130px;	
+}
+.main-navigation{
+	float:right;
+	width:780px;
+	min-height:70px;
+	padding-bottom:10px;
+	padding-top:40px;
+	margin-bottom:10px;
+}
+.main-navigation>a{
+	color:#000000;
+	text-decoration:none;
+	margin-right:52px;
+}
+.main-navigation>a:first-child{
+	margin-left:175px;
+}
+.user-block {
+	float: right;
+	width: 110px;
+	min-height: 70px;
+}
+a.login{
+	color:#000000;
+	text-decoration:none;
+}
+}
+.slider {
+  width: 880px;
+  position: relative;
+  margin-top:10px;
+}
+.slide {
+  min-height: 310px;
+  background-repeat: no-repeat;
+  background-position: 100% 10px;
+}
+.slider input[type="radio"] {
+  display: none;
+}
+.slider-controls {
+  position: absolute;
+  bottom: 95px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+  vertical-align: top;
+  background: #ffffff;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide-text {
+  width: 500px;
+}
+.slide-title {
+  font-weight: bold;
+  font-size: 36px;   
+}
+.slide p {
+  font-weight: 500;
+  line-height: 22px;
+  color: #283136;
+}
+.slide .btn {
+  display: block;
+  width: 220px;
+  margin-top: 25px;
+  padding: 12px 10px;
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 3px;
+  background: #fb565a;
+}
+.slide:nth-child(1) {
+  background-image: url("img/slider-bg.png");
+}
+
+.slide:nth-child(2) {
+  background-image: url("img/slider-bg-2.png");
+}
+
+.slide:nth-child(3) {
+  background-image: url("img/slider-bg-3.png");
+}
+.slide {
+  display: none;
+}
+
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+  display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+  display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+  display: block;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+  background: #c1c1c1;
+}
+.offers{
+	border-bottom:2px solid #eeeeee;
+	margin-top:50px;
+	padding-bottom: 50px;
+}
+.offers div {
+	display:inline-block;
+	width:310px;
+	margin-right:10px;
+}
+.offers div:last-child {
+	margin-right:0px;
+}
+.info {
+	padding-top:50px;
+	border-bottom:2px solid #eeeeee;
+	padding-bottom:50px;
+}
+.who_we_are {
+	width:600px;
+	float:left;
+}
+.logotype {
+	width:250px;
+	float:right;	
+}
+.logotype img{
+	width:250px;
+	height:75px;
+}
+.what_we_do {
+	float:left;
+}
+.how_we_work{
+	float:right;
+}
+.logos {
+	padding-top:50px;
+	padding-bottom:50px;
+	border-bottom:2px solid #eeeeee;
+}
+.image{
+	display:inline-block;
+	margin-right:10px;
+	width:310px;
+}
+.image:last-child{
+	margin-right:0px;
+}
+.image img{
+	width:310px;
+}
+.main-footer{
+	padding-top:50px;
+}
+.footer-contacts {
+	background: #eeeeee;
+	padding-top:60px;
+	padding-bottom:60px;
+}
+.contacts{
+	width:250px;
+	background-color:#FFFFFF;
+	padding:20px;
+	min-height:120px;
+}
+.button {
+	display:block;
+	margin-top:5px;
+	background-color:#fb565a;
+	padding:5px;
+	color:#FFFFFF;
+	width:200px;
+	text-align:center;
+	margin:0 auto;
+	margin
+	3-top
+	top:25px;
+}
+.footer-social{	
+	padding-bottom:30px;
+	margin-top:30px;
+}
+.social-buttons {	
+	float:left;
+	width:310px;
+}
+.social-btn{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+	background-color:#eeeeee;
+	border-radius:50%;
+	margin-top:30px;
+}
+.discount{
+	float:right;
+	width:430px;
+	margin-top:-80px;
+}
