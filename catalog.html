@@ -2,105 +2,97 @@
   <head>
 	<meta charset="utf-8">
     <title>Nerds-catalog</title>
-	<link rel="stylesheet" href="nerds_catalog.css">
+	<link rel="stylesheet" href="css/nerds_catalog.css">
   </head>
   <body>
 	<header class="main-header">
-		<div class="index-logo">
-			<img src="http://placehold.it/150x100" alt="Nerds">
-		</div>
-		<div class="container">
-			<nav class="main-navigation">
-				<ul>
-					<li>
-						<a href="#">Студия</a>
-					</li>
-					<li>
-						<a href="#">Клиенты</a>
-					</li>
-					<li>
-						<a href="#">Магазин</a>
-					</li>
-					<li>
-						<a href="#">Контакты</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="user-block">
-				<img src="http://placehold.it/150x100" width="368" height="204" alt="Nerds" class="basket">
-				<a class="login" href="#">Корзина</a>
-			</div>
-		</div>
-		<h1>Добро пожаловать в магазин готовых макетов</h1>
+		<div class="container clearfix">
+				<div class="logo">
+					<img src="http://placehold.it/150x100" width="368" height="204" alt="Nerds»">
+				</div>
+				<nav class="main-navigation">
+					<div class="user-block">
+						<a class="login" href="#">Корзина</a>
+					</div>
+					<a href="#">Студия</a>
+					<a href="#">Клиенты</a>
+					<a href="#">Магазин</a>
+					<a href="#">Контакты</a>					
+				</nav>
+		</div>	
+		<div class="title"><h1>Добро пожаловать в магазин<br>готовых макетов</h1></div>
 	</header>
 	<main class="container">
-		<section class="filter">
-			<div class="range-filter">
-				<div class="range-controls">
-					<div class="scale"><div class="bar" style="margin-left: 20%; width: 30%"></div></div>
-					<div class="toggle max_toggle"></div>
-					<div class="toggle min_toggle"></div>
+		<section class=clearfix>
+			<section class="filter">
+					<h2>Стоимость:</h2>
+				<div class="range-filter">					
+					<div class="range-controls">
+						<div class="scale"><div class="bar" style="margin-left: 20%; width: 30%"></div></div>
+						<div class="toggle max_toggle"></div>
+						<div class="toggle min_toggle"></div>
+					</div>
+					<div class="price-controls">
+						<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+						<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+					</div>
 				</div>
-				<div class="price-controls">
-					<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-					<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+				<form action="https://echo.htmlacademy.ru" method="get">
+					<h2>Сетка:</h2>
+					<div class="grid">
+						<label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label><br>
+						<label><input type="radio" name="grid" value="fixed">Фиксированная</label><br>
+						<label><input type="radio" name="grid" value="elastic">Резиновая</label><br>
+					</div>
+					<h2>Особенности:</h2>
+					<div class="features">
+						<label><input type="checkbox" name="Slider" checked>Слайдер</label><br>
+						<label><input type="checkbox" name="Advantages">Блок преимуществ</label><br>
+						<label><input type="checkbox" name="Gallery" checked>Галерея</label><br>
+						<label><input type="checkbox" name="Basket">Корзина</label><br>
+					</div>
+					<div class="buttons"><a>Показать</a></div>
+				</form>
+			</section>
+			<section class="layouts">
+				<article class="good"><img src="http://placehold.it/150x100" alt="Aviator"></article>
+				<article class="good"><img src="http://placehold.it/150x100" alt="Sunset"></article>
+				<article class="good"><img src="http://placehold.it/150x100" alt="Forte"></article>
+				<article class="good"><img src="http://placehold.it/150x100" alt="Modern Organic Thai"></article>
+				<article class="good"><img src="http://placehold.it/150x100" alt="Avenue"></article>
+				<article class="good"><img src="http://placehold.it/150x100" alt="Dovetail"></article>
+				<div class="paginator">
+					<a href="#" class="enter current">1</a>
+					<a href="#" class="enter">2</a>
+					<a href="#" class="enter">3</a>
+					<a href="#" class="enter">Следующая</a>
 				</div>
-			</div>
-			<form action="https://echo.htmlacademy.ru" method="get">
-				<h2>Сетка:</h2>
-				<div class="grid">
-					<label><input type="radio" name="grid" value="adaptive" checked>Адаптивная</label><br>
-					<label><input type="radio" name="grid" value="fixed">Фиксированная</label><br>
-					<label><input type="radio" name="grid" value="elastic">Резиновая</label><br>
-				</div>
-				<h2>Особенности:</h2>
-				<div class="features">
-					<label><input type="checkbox" name="Slider" checked>Слайдер</label><br>
-					<label><input type="checkbox" name="Advantages">Блок преимуществ</label><br>
-					<label><input type="checkbox" name="Gallery" checked>Галерея</label><br>
-					<label><input type="checkbox" name="Basket">Корзина</label><br>
-				</div>
-				<div><a class="button">Показать</a></div>
-			</form>
-		</section>
-		<section class="layouts">
-			<div class="good"><img src="http://placehold.it/150x100" width="204" height="300" alt="Aviator"></div>
-			<div class="good"><img src="http://placehold.it/150x100" width="204" height="300" alt="Sunset"</div>
-			<div class="good"><img src="http://placehold.it/150x100" width="204" height="300" alt="Forte"></div>
-			<div class="good"><img src="http://placehold.it/150x100" width="204" height="300" alt="Modern Oganic Thai"></div>
-			<div class="good"><img src="http://placehold.it/150x100" width="204" height="300" alt="Avenue"></div>
-			<div class="good"><img src="http://placehold.it/150x100" width="204" height="300" alt="Dovetail"></div>
-			<div class="move">
-				<a class="button current">1</a>
-				<a class="button">2</a>
-				<a class="button">3</a>
-				<a class="button next">Следующая</a>
-			</div>
+			</section>
 		</section>
 	</main>
-	<footer class="main-footer">
-        <section class="footer-contacts">
-			<div class="footer-picture"><img src="http://placehold.it/150x100" alt="footer picture"></div>
-			<div class="contacts">
-				NЁRDS DESIGN STUDIO<br>
-				191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
-				Телефон: +7 (812) 275-75-675
-				<a class="button">Напишите нам</a>
-			</div>
-        </section>
-        <section class="footer-social">
-			<p>Давайте дружить, это выгодно!</p>
-			<p>Скидка 10% для друзей из социальных сетей.</p>
-			<div class="social_buttons">
-				<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-				<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-				<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
-			</div>
-        </section>
-        <section class="footer-copyright">
-          <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-        </section>
-      </footer>
+    </footer><footer class="main-footer">
+		<div class="clearfix">
+			<section class="footer-contacts" >
+				<div class="contacts container">
+					<div class="contacts-title">NЁRDS DESIGN STUDIO</div>
+					<div class="address">191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8<br>
+					Телефон: +7 (812) 275-75-675</div>
+					<a class="button">Напишите нам</a>
+				</div>
+			</section>
+			<section class="footer-social container">	
+				<div class="clearfix">
+					<div class="social-buttons">
+						<a class="social-btn social-btn-vk" href="#"></a>
+						<a class="social-btn social-btn-fb" href="#"></a>
+						<a class="social-btn social-btn-inst" href="#"></a>
+					</div>
+					<div class="discount">
+						<h2>Давайте дружить, это выгодно!</h2>
+						<p>Скидка 10% для друзей из социальных сетей.</p>
+					</div>
+			</section>	
+		</div>
+    </footer>
   </body>
 </html>

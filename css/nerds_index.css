@@ -14,46 +14,48 @@ body {
 	clear:both;
 }
 .container{
-	margin-left:100px;
-	width:960px;
+	margin-left:160px;
+	width:880px;
 }
 .main-header {
   background: #eeeeee;
-  padding-bottom:80px;
+  padding-bottom:35px;
 }
-.menu .logo {
+.logo {
 	float:left;
 	margin-top:15px;
+	width:140px;
 }
 .logo>img {
 	height:60px;
-	width:130px;	
+	width:140px;	
 }
 .main-navigation{
 	float:right;
-	width:780px;
+	width:720px;
 	min-height:70px;
 	padding-bottom:10px;
 	padding-top:40px;
 	margin-bottom:10px;
 }
 .main-navigation>a{
+	display:block;
+	float:right;
 	color:#000000;
 	text-decoration:none;
-	margin-right:52px;
-}
-.main-navigation>a:first-child{
-	margin-left:175px;
+	margin-left:70px;
+	text-align:right;
 }
 .user-block {
 	float: right;
 	width: 110px;
 	min-height: 70px;
+	margin-left:65px;
+	text-align: right;
 }
 a.login{
 	color:#000000;
 	text-decoration:none;
-}
 }
 .slider {
   width: 880px;
@@ -76,7 +78,6 @@ a.login{
   margin-left: -100px;
   text-align: center;
 }
-
 .slider-controls label {
   display: inline-block;
   width: 4px;
@@ -88,7 +89,6 @@ a.login{
   border-radius: 50%;
   cursor: pointer;
 }
-
 .slide-text {
   width: 500px;
 }
@@ -129,15 +129,12 @@ a.login{
 .slide {
   display: none;
 }
-
 #btn-1:checked ~ .slides .slide:nth-child(1) {
   display: block;
 }
-
 #btn-2:checked ~ .slides .slide:nth-child(2) {
   display: block;
 }
-
 #btn-3:checked ~ .slides .slide:nth-child(3) {
   display: block;
 }
@@ -148,16 +145,40 @@ a.login{
 }
 .offers{
 	border-bottom:2px solid #eeeeee;
-	margin-top:50px;
+	padding-top:50px;
 	padding-bottom: 50px;
 }
-.offers div {
+.offer {
 	display:inline-block;
-	width:310px;
-	margin-right:10px;
+	width:237px;
+	margin-right:80px;
+	height:300px;
 }
-.offers div:last-child {
+.offer:last-child{
 	margin-right:0px;
+}
+.picture {
+	width:237px;
+	height:120px;
+}
+.offer>h3 {
+	text-transform: uppercase;
+}
+.offer>a{
+	display:block;
+	width:140px;
+	text-align: center;
+	padding:10px;
+	color:#ffffff;
+}
+.offer:first-child>a{
+	background-color:#fb565a;
+}
+.offer:nth-child(2)>a{
+	background-color:#00ca74;
+}
+.offer:nth-child(3)>a{
+	background-color:#efc84a;
 }
 .info {
 	padding-top:50px;
@@ -165,22 +186,27 @@ a.login{
 	padding-bottom:50px;
 }
 .who_we_are {
-	width:600px;
+	width:640px;
 	float:left;
 }
+.who_we_are>h2 {
+	margin-top:0px;
+}
 .logotype {
-	width:250px;
+	width:240px;
 	float:right;	
 }
 .logotype img{
-	width:250px;
+	width:240px;
 	height:75px;
 }
 .what_we_do {
 	float:left;
+	width:640px;
 }
 .how_we_work{
 	float:right;
+	width:240px;
 }
 .logos {
 	padding-top:50px;
@@ -189,14 +215,14 @@ a.login{
 }
 .image{
 	display:inline-block;
-	margin-right:10px;
-	width:310px;
+	width:237px;
+	margin-right:80px;
 }
 .image:last-child{
 	margin-right:0px;
 }
 .image img{
-	width:310px;
+	width:240px;
 }
 .main-footer{
 	padding-top:50px;
@@ -216,22 +242,21 @@ a.login{
 	display:block;
 	margin-top:5px;
 	background-color:#fb565a;
-	padding:5px;
+	padding:10px;
 	color:#FFFFFF;
 	width:200px;
 	text-align:center;
 	margin:0 auto;
-	margin
-	3-top
-	top:25px;
+	margin-top:25px;
 }
 .footer-social{	
 	padding-bottom:30px;
 	margin-top:30px;
 }
-.social-buttons {	
-	float:left;
+.social-buttons {
+	float:left;	
 	width:310px;
+	vertical-align:bottom;
 }
 .social-btn{
     display: inline-block;
@@ -240,11 +265,13 @@ a.login{
     margin-right: 10px;
     vertical-align: middle;
 	background-color:#eeeeee;
-	border-radius:50%;
-	margin-top:30px;
+	border-radius:50%;	
 }
 .discount{
 	float:right;
-	width:430px;
-	margin-top:-80px;
+	width:558px;
 }
+.discount>h2{
+  margin-top:0px;
+}
+
